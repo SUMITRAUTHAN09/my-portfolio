@@ -1,8 +1,10 @@
 // Cursor-tracking effect for About section
 document.addEventListener("mousemove", function (e) {
+  // Update the CSS variables for the global mouse tracker
   document.body.style.setProperty("--x", `${e.clientX}px`);
   document.body.style.setProperty("--y", `${e.clientY}px`);
 
+  // The code for the about section's cursor-tracking effect
   const about = document.getElementById("about");
   if (!about) return;
 
