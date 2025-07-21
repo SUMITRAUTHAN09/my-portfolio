@@ -124,14 +124,22 @@ nav {
   position: sticky;
   top: 0;
   z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav ul {
   display: flex;
+  flex-wrap: wrap; /* ✅ Allows wrapping on small screens */
   justify-content: center;
-  gap: 2rem;
+  align-items: center; /* ✅ Vertically centers items */
+  gap: 1.5rem;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
+
 
 nav a {
   color: #00e5ff;
@@ -241,6 +249,11 @@ section.fade-in {
   }
 }
 
+@media (max-width: 600px) {
+  nav a {
+    font-size: 0.85rem;
+  }
+}
 
 footer {
   text-align: center;
