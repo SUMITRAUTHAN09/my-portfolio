@@ -2,6 +2,7 @@
 document.addEventListener("mousemove", function (e) {
   document.body.style.setProperty("--x", `${e.clientX}px`);
   document.body.style.setProperty("--y", `${e.clientY}px`);
+
   const about = document.getElementById("about");
   if (!about) return;
 
@@ -13,7 +14,10 @@ document.addEventListener("mousemove", function (e) {
     about.style.setProperty("--x", `${x}px`);
     about.style.setProperty("--y", `${y}px`);
   }
-  
+});
+
+// Fix nav toggle functionality
+document.addEventListener("DOMContentLoaded", function () {
   const toggle = document.querySelector(".nav-toggle");
   const navLinks = document.querySelector(".nav-links");
 
@@ -21,6 +25,3 @@ document.addEventListener("mousemove", function (e) {
     navLinks.classList.toggle("show");
   });
 });
-// Cursor tracker for entire portfolio background
-
-
