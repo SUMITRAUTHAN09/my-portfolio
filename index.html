@@ -7,8 +7,9 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav>
-    <ul>
+   <nav>
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#internship">Internship</a></li>
       <li><a href="#projects">Projects</a></li>
@@ -20,18 +21,14 @@
   </nav>
 
   <div class="background-animation"></div>
+  <main>
   <section id="about" class="fade-in">
     <div class="profile-content">
       <img src="Image/profile.png" alt="Sumit Rauthan" class="profile-picture">
       <div>
         <h1>Sumit Rauthan</h1>
         <h3>Software Engineer | Data Scientist | AI & Cybersecurity Enthusiast</h3>
-        <div class="card"><p> A recent B.Tech graduate in Computer Science and Engineering,
-     passionate about turning ideas into impactful solutions. With a
-     strong foundation in algorithms, software engineering, and AI, I am
-     eager to take on real-world challenges. Proficient in Python, Java,
-     and C++, I am ready to contribute to innovative projects in data
-     science, machine learning, and cybersecurity.</p></div>
+        <div class="card"><p> A recent B.Tech graduate in Computer Science and Engineering,passionate about turning ideas into impactful solutions. With a strong foundation in algorithms, software engineering, and AI, I am eager to take on real-world challenges. Proficient in Python, Java,and C++, I am ready to contribute to innovative projects in data science, machine learning, and cybersecurity.</p></div>
       </div>
     </div>
   </section>
@@ -40,10 +37,8 @@
     <h2>Internships</h2>
     <div class="card">
       <h3>Oasis Infobyte (Sep–Oct 2024)</h3>
-      <p> Remote | Program Coordinator: Ayush Choudhary
- (admin@oasisinfobyte.com)</p>
- <p>Developed responsive web pages using HTML, CSS, and JavaScript, ensuring optimal user experience across desktop, tablet, and mobile devices.Created dynamic landing and tribute pages to enhance UI/UX and accessibility.Implemented DOM manipulation to build interactive
- application like calculators and task managers.Designed and validated secure login systems with form validation and user authentication. Contributed to team-based projects, applying best practices in responsive design and front-end development.</p>
+      <p> Remote | Program Coordinator: Ayush Choudhary (admin@oasisinfobyte.com)</p>
+ <p>Developed responsive web pages using HTML, CSS, and JavaScript, ensuring optimal user experience across desktop, tablet, and mobile devices.Created dynamic landing and tribute pages to enhance UI/UX and accessibility.Implemented DOM manipulation to build interactive application like calculators and task managers.Designed and validated secure login systems with form validation and user authentication. Contributed to team-based projects, applying best practices in responsive design and front-end development.</p>
     </div>
   </section>
 
@@ -66,10 +61,7 @@
     <div class="card project-card">
       <div class="project-details">
         <h3>Password Generator App</h3>
-        <p>Built a responsive React-based Password Generator with
- customizable criteria and copy-to-clipboard functionality.
- Included real-time validation, popup alerts, and a clean UI with
- custom CSS.</p>
+        <p>Built a responsive React-based Password Generator with customizable criteria and copy-to-clipboard functionality.Included real-time validation, popup alerts, and a clean UI with custom CSS.</p>
         <a href="https://github.com/SUMITRAUTHAN09/Random_Password_Generator" target="_blank" class="project-link">GitHub Repo</a>
       </div>
       <div class="project-image-container">
@@ -82,10 +74,7 @@
     <div class="card project-card">
       <div class="project-details">
         <h3>Human Detection System</h3>
-        <p>Built a real-time human detection system using webcam input
- and computer vision techniques. Integrated Twilio API to send
- instant notifications to users’ phones, enabling automated
- monitoring.</p>
+        <p>Built a real-time human detection system using webcam input and computer vision techniques. Integrated Twilio API to send instant notifications to users’ phones, enabling automated monitoring.</p>
         <a href="https://github.com/SUMITRAUTHAN09/Human-detection" target="_blank" class="project-link">GitHub Repo</a>
       </div>
       <div class="project-image-container">
@@ -98,9 +87,7 @@
     <div class="card project-card">
       <div class="project-details">
         <h3> Image Encryption and Decryption Tool</h3>
-        <p> Developed a Java GUI application using Swing to encrypt and
- decrypt image files with XOR-based encryption. Implemented file
- I/O for secure data handling and key-based encryption.</p>
+        <p> Developed a Java GUI application using Swing to encrypt and decrypt image files with XOR-based encryption. Implemented file I/O for secure data handling and key-based encryption.</p>
         <a href="https://github.com/SUMITRAUTHAN09/Image-encryption-decryption" target="_blank" class="project-link">GitHub Repo</a>
       </div>
       <div class="project-image-container">
@@ -152,7 +139,8 @@
     <p>Phone: +91 8864854298</p>
     <p>Location: Dehradun, Uttarakhand, India</p>
   </section>
-
+  </main>
+  
   <footer>
     <p>&copy; 2025 Sumit Rauthan. All rights reserved.</p>
   </footer>

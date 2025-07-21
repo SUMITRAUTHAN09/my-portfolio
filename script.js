@@ -1,6 +1,6 @@
 // Cursor-tracking effect for About section
 document.addEventListener("mousemove", function (e) {
-    document.body.style.setProperty("--x", `${e.clientX}px`);
+  document.body.style.setProperty("--x", `${e.clientX}px`);
   document.body.style.setProperty("--y", `${e.clientY}px`);
   const about = document.getElementById("about");
   if (!about) return;
@@ -14,6 +14,12 @@ document.addEventListener("mousemove", function (e) {
     about.style.setProperty("--y", `${y}px`);
   }
   
+  const toggle = document.querySelector(".nav-toggle");
+  const navLinks = document.querySelector(".nav-links");
+
+  toggle.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
 });
 // Cursor tracker for entire portfolio background
 
